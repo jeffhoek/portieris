@@ -9,7 +9,7 @@ image:
   host:
   pullSecret:
   image: portieris
-  tag: 0.6.0
+  tag: 0.7.0
   pullPolicy: Always
 
 service:
@@ -19,6 +19,9 @@ service:
 
 # If not running on IBM Cloud Container Service set to false
 IBMContainerService: true
+
+# If managing portieris-certs secret externally
+SkipSecretCreation: false
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
