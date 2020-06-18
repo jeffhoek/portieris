@@ -54,6 +54,8 @@ spec:
       policy:
     - name: "*.icr.io/armada-master/*"
       policy:
+    - name: "registry.ng.bluemix.net/armada-master/*"
+      policy:
     {{ end }}
 ---
 apiVersion: securityenforcement.admission.cloud.ibm.com/v1beta1
@@ -71,4 +73,6 @@ spec:
       policy:
         trust:
           enabled: true
+    - name: "quay.io/openshift-release-dev/*"
+      policy:
 {{ end }}
