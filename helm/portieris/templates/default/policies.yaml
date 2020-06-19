@@ -71,4 +71,6 @@ spec:
       policy:
         trust:
           enabled: true
+    - name: "quay.io/openshift-release-dev/*"
+      policy:
 {{ end }}
